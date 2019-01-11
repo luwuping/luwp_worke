@@ -1,0 +1,19 @@
+{
+  "name": "luwp_worke",
+  "version": "1.0.0",
+  "description": "训练仓库",
+  "main": "index.js",
+  "scripts": {
+    "test": "node common/mark.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luwuping/luwp_worke.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luwuping/luwp_worke/issues"
+  },
+  "homepage": "https://github.com/luwuping/luwp_worke#readme"
+}

@@ -1,3 +1,7 @@
-function test(){
-    alert('123');
+
+
+function test() {
+    'use strict';
+    return '123';
 }
+test();
