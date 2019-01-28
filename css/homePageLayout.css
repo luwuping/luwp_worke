@@ -1,0 +1,39 @@
+#container {
+    width: 500px;
+    background-color: aqua;
+}
+
+#headTitle {
+    background-color: burlywood;
+}
+
+#menu {
+    background-color: navy;
+    float: left;
+    width: 100px;
+    height: 200px;
+
+}
+
+#content {
+    background-color: darkcyan;
+    height: 200px;
+    width: 400px;
+    float: right;
+}
+
+#footer{
+    background-color: blueviolet;
+    text-align: center;
+    clear: both;
+}
+
+.ll>li{
+    background-image: url('../img/log/log.png');
+    background-repeat: no-repeat;
+    height: 50px;
+    padding: 25px 50px 0;
+}
+.ll{
+    list-style-type: none;
+}
