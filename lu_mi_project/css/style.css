@@ -86,7 +86,12 @@ body {
     background-color: #fff;
     color: #ff6700;
 }
-
+.topbar-cart i{
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 4px;
+    vertical-align: -4px;
+}
 .topbar-info a {
     float: left;
     padding: 0 5px;
@@ -178,9 +183,46 @@ body {
 
 
 .header-search {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     float: right;
     width: 296px;
     height: 50px;
     margin-top: 25px;
+}
+.header-search .search-form{
+    position: relative;
+    width: 296px;
+    height: 10px;
+    display: block;
+}
+.header-search .search-form .search-text{
+    position:absolute;
+    top: 0;
+    right: 0;
+    display:block;
+    width: 245px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #e0e0e0;
+    outline: 0;
+}
+
+.header-search .search-form .search-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 52px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    font-size: 24px;
+    line-height: 24px;
+    background-color: #fff;
+    color: #616161;
+    outline: 0;
+}
+
+.header-search .search-form .search-button:hover{
+    background-color: #ff6700;
+    color: #fff;
 }
