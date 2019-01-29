@@ -1,9 +1,16 @@
 body {
+    /* 去除body的内边框和外边框*/
     margin: 0;
     padding: 0;
 }
 
+ul {
+    /* 去除列表的图标 */
+    list-style: none;
+}
+
 a {
+    /* 去除a标签自带的下划线 */
     text-decoration: none;
 }
 
@@ -16,11 +23,13 @@ body {
     background-color: #333;
     height: 40px;
 }
-.topbar a{
+
+.topbar a {
     color: #b0b0bb;
     font-size: 12px;
 }
-.topbar a:hover{
+
+.topbar a:hover {
     color: rgb(255, 255, 255);
 }
 
@@ -35,99 +44,12 @@ body {
     float: left;
     font-size: 0;
 }
-.topbar-nav span{
-    font-size: 12px;
-    margin: 0.5em;
-    color: #424242;
-    font-family: sans-serif;
-}
-
-.topbar-info,.topbar-cart {
-    float: right;
-}
-
-.container::before,
-.container::after {
-    content: "";
-    display: table;
-}
-
-.container::after {
-    clear: both;
-}
-
-.topbar-cart a{
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    width: 120px;
-    background-color: #424242;
-}
-.topbar-cart span{
-    margin-left: -4px;
-    font-size: 12px;
-}
-.topbar-cart a:hover{
-    background-color: #fff;
-    color: #ff6700;
-}
-.topbar-info a{
-    float: left;
-    padding: 0 5px;
-    height: 40px;
-    line-height: 40px;
-}
-.topbar-info{
-    margin-right: 15px;
-}
-.topbar-info span{
-    float: left;
-    font-family: sans-serif;
-    font-size: 12px;
-    color: #424242;
-    line-height: 40px;
-    height: 40px;
-}
-.topbar-info .spl{
-    padding: 0 10px;
-}
-
-/* body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-.topbar {
-    background-color: #333;
-    height: 40px;
-}
-
-.container {
-    margin: 0 auto;
-    width: 1226px;
-}
-
-.topbar-nav {
-    float: left;
-    height: 40px;
-    line-height: 40px;
-    font-size: 0;
-}
 
 .topbar-nav span {
     font-size: 12px;
+    margin: 0.5em;
     color: #424242;
     font-family: sans-serif;
-    margin: 0.5em;
 }
 
 .topbar-info,
@@ -145,11 +67,118 @@ a {
     clear: both;
 }
 
-.topbar a {
-    color: #b0b0b0;
-    font-size: 11px;
+.topbar-cart a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 120px;
+    background-color: #424242;
 }
 
-.topbar a:hover {
-    color: white;
-} */
+.topbar-cart span {
+    margin-left: -4px;
+    font-size: 12px;
+}
+
+.topbar-cart a:hover {
+    background-color: #fff;
+    color: #ff6700;
+}
+
+.topbar-info a {
+    float: left;
+    padding: 0 5px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.topbar-info {
+    margin-right: 15px;
+}
+
+.topbar-info span {
+    float: left;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #424242;
+    line-height: 40px;
+    height: 40px;
+}
+
+.topbar-info .spl {
+    padding: 0 10px;
+}
+
+.header {
+    height: 100px;
+}
+
+.header-logo {
+    /* border: 1px solid red; */
+    float: left;
+    width: 62px;
+    margin-top: 22px;
+    height: 55px;
+}
+
+.header-logo a {
+    display: block;
+    width: 55px;
+    height: 55px;
+    background: #ff6700 url(../img/mi-logo.png) no-repeat 50% 50%;
+}
+
+.header-logo .lr {
+    text-align: left;
+    text-indent: -20000em;
+}
+
+.header-nav {
+    /* border: 1px solid red; */
+    float: left;
+    width: 820px;
+    height: 100px;
+
+}
+
+.header-nav ul {
+    width: 820px;
+    height: 88px;
+    font-size: 16px;
+}
+
+.header-nav li {
+    float: left;
+}
+.header-nav .nav-category{
+    float: left;
+    width: 127px;
+    padding: 0 15px 0 0;
+}
+
+.header-nav .nav-category a {
+    display: block;
+    padding: 26px 0px 38px;
+    text-align: right;
+    color: #333;
+}
+
+.header-nav .nav-item a {
+    display: block;
+    padding: 26px 10px 38px;
+    color: #333;
+}
+
+.header-nav .nav-item a:hover {
+    color: #ff6700;
+}
+
+
+.header-search {
+    border: 1px solid red;
+    float: right;
+    width: 296px;
+    height: 50px;
+    margin-top: 25px;
+}
