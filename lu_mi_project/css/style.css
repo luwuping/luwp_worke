@@ -1,4 +1,6 @@
-body {
+body,
+ul,
+li {
     /* 去除body的内边框和外边框*/
     margin: 0;
     padding: 0;
@@ -58,13 +60,15 @@ body {
 }
 
 .container::before,
-.container::after ,.clearfix::before,
+.container::after,
+.clearfix::before,
 .clearfix::after {
     content: "";
     display: table;
 }
 
-.container::after, .clearfix::after {
+.container::after,
+.clearfix::after {
     clear: both;
 }
 
@@ -86,12 +90,14 @@ body {
     background-color: #fff;
     color: #ff6700;
 }
-.topbar-cart i{
+
+.topbar-cart i {
     font-size: 20px;
     line-height: 20px;
     margin-right: 4px;
     vertical-align: -4px;
 }
+
 .topbar-info a {
     float: left;
     padding: 0 5px;
@@ -158,7 +164,8 @@ body {
 .header-nav li {
     float: left;
 }
-.header-nav .nav-category{
+
+.header-nav .nav-category {
     float: left;
     width: 127px;
     padding: 0 15px 0 0;
@@ -189,17 +196,19 @@ body {
     height: 50px;
     margin-top: 25px;
 }
-.header-search .search-form{
+
+.header-search .search-form {
     position: relative;
     width: 296px;
     height: 10px;
     display: block;
 }
-.header-search .search-form .search-text{
-    position:absolute;
+
+.header-search .search-form .search-text {
+    position: absolute;
     top: 0;
     right: 0;
-    display:block;
+    display: block;
     width: 245px;
     height: 50px;
     line-height: 50px;
@@ -207,7 +216,7 @@ body {
     outline: 0;
 }
 
-.header-search .search-form .search-button{
+.header-search .search-form .search-button {
     position: absolute;
     top: 0;
     right: 0;
@@ -222,7 +231,167 @@ body {
     outline: 0;
 }
 
-.header-search .search-form .search-button:hover{
+.header-search .search-form .search-button:hover {
     background-color: #ff6700;
     color: #fff;
+}
+
+.seckill {
+    background-color: #f5f5f5;
+}
+
+.seckill-head {
+    margin-top: 19px;
+    height: 170px;
+    background: url(../img/seckill-head.jpg) no-repeat 50% 0;
+}
+
+.seckill-nav {
+    margin: -68px 0 22px;
+}
+
+.seckill-nav ul {
+    background-color: #414141;
+    height: 68px;
+}
+
+.seckill-nav li {
+    display: block;
+    float: left;
+    color: #fff;
+    width: 20%;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.seckill-nav .active {
+    background-color: #f1393a;
+}
+
+.seckill-nav em {
+    display: inline-block;
+    margin-left: 30px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.seckill-nav span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    line-height: 1;
+    font-size: 14px;
+    text-align: left;
+}
+
+.seckill-nav ul li span em {
+    display: inline-block;
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 0;
+    font-style: normal;
+    text-align: left;
+}
+
+.seckill-goods ul {
+    margin-right: -13px;
+    /* border: 1px solid red; */
+}
+
+.seckill-goods li {
+    width: 400px;
+    height: 190px;
+    float: left;
+    background-color: #fff;
+    /* border: 1px solid black; */
+    margin-right: 13px;
+    margin-bottom: 13px;
+}
+
+
+.seckill-goods .bg {
+    float: left;
+    /* border: 1px solid red; */
+    width: 190px;
+    height: 190px;
+}
+
+.seckill-goods .bg img {
+    height: 190px;
+}
+
+.seckill-goods .info {
+    float: right;
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid black; */
+    padding-top: 30px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.seckill-goods .info .name {
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    color: #333;
+}
+
+.seckill-goods .info .tips {
+    font-size: 12px;
+    line-height: 12px;
+    color: #b0b0bb;
+    margin-top: 10px;
+}
+
+.seckill-goods .info .price {
+    font-size: 16px;
+    line-height: 16px;
+    color: #f1393a;
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+
+.seckill-goods .info .price del {
+    font-size: 12px;
+    color: #999;
+    line-height: 12px;
+    margin-left: 14px;
+
+}
+
+.seckill-goods .info .btn {
+    display: block;
+    width: 118px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    background-color: #f1393a;
+    margin-top: 10px;
+    border: 1px solid #f1393a;
+}
+
+.seckill-goods .info .person {
+    color: #999;
+    margin-top: 15px;
+    height: 12px;
+    line-height: 12px;
+}
+
+
+
+.seckill .notic {
+    padding-bottom: 35px;
+    color: rgba(0, 0, 0, 0.27);
+    font-size: 12px;
+    margin-top: 100px;
 }
