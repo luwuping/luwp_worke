@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue test</title>
+    <style>
+        .class1 {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="u1" style="width: 600px;height: 600px;background-color: slategrey;">
+        <!-- <ul>
+            <li>姓名:{{name}}</li>
+            <li>手机:{{phone}}</li>
+            <li>日薪:{{money}}</li>
+            <li>月薪:{{monthMoney()}}</li>
+            <li>年薪:{{yearMoney()}}</li>
+        </ul>
+        <div v-html="msg">
+
+        </div> -->
+        <!-- v-model实现数据的双向绑定 -->
+        <input type="text" name="" v-model="t1" id="txt1">
+        <p>
+            输入的字符串为： {{t1|deleteNumber}}
+            过滤出的数字为：{{numStr}}
+        </p>
+        <button v-on:click="reverseTxt">翻转输入字符串</button>
+        <!-- <button v-on:click="deleteNumber">过滤掉数字</button> -->
+        <!-- <input type="checkbox" name="" v-model="use" id="r1">
+        <div v-bind:class="{class1:use}">
+            input的值：{{use}}
+        </div> -->
+
+
+        <!-- <select name="" v-model="sel" id="s1">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+        </select>
+        <p v-bind="sel">
+            下拉框的值为：{{sel}}
+        </p> -->
+        <!-- vue完全支持js表达式 -->
+        <!-- <div>
+            {{num+9}}</br>
+            {{ck?"true":"false"}}</br>
+            {{message.split("").reverse().join("")}}
+            <div v-bind:id="'list-'+id">vue完全支持js表达式</div>
+        </div> -->
+
+
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="js/test.js"></script>
+
+</body>
+
+</html>
